@@ -24,6 +24,7 @@ export const getFeaturedPosts = async (quantity: number) => {
   });
 };
 
+
 // Categories query
 const CATEGORIES_QUERY = defineQuery(`*[
   _type == "category"
@@ -178,15 +179,36 @@ export const getOutreachEvents = async (): Promise<OutreachEvent[]> => {
     groq`*[_type == "event"] | order(date desc) {
       _id,
       title,
+      slug,
       fundedBy,
       date,
       dateto,
       collaboration,
       venue,
+      description,
       "imageUrl": image.asset->url
     }`
   );
 };
+
+export const getOutreachEventBySlug = async (slug: string): Promise<OutreachEvent | null> => {
+  return await client.fetch(
+    groq`*[_type == "event" && slug.current == $slug][0] {
+      _id,
+      title,
+      slug,
+      fundedBy,
+      date,
+      dateto,
+      collaboration,
+      venue,
+      description,
+      "imageUrl": image.asset->url
+    }`,
+    { slug }
+  );
+};
+
 
 export const getProjectsDesc = async (): Promise<ProjectDesc[]> => {
   return await client.fetch(

@@ -72,13 +72,10 @@ const EventSection = () => {
 )}
 
 <div className="flex justify-self-stretch mt-4">
-  <Link
-    href="#"
-    className="text-sm px-6 py-2 rounded-md shadow border text-gray-800 hover:bg-gray-100 transition duration-300 w-full text-center"
-    style={{
-      borderRadius: "20px",
-    }}
-  >
+<Link
+  href={`/events/${event.slug.current}`}
+  className="text-sm px-6 py-2 rounded-md shadow border text-gray-800 hover:bg-gray-100 transition duration-300 w-full text-center"
+  style={{ borderRadius: "20px" }}>
     Outreach
   </Link>
 </div>

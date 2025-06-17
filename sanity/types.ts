@@ -100,19 +100,21 @@ export type Comment = {
 export type OutreachEvent = {
   _id: string;
   title: string;
+  slug: {
+    current: string;
+  };
   fundedBy: string;
   date: string;
   dateto: string;
   collaboration: string;
   venue: string;
   image?: {
-    asset: {
-      _ref: string;
-      _type: string;
-    };
+    asset: { _ref: string; _type: string };
   };
-  imageUrl?: string; // We'll derive this using urlFor()
+  imageUrl?: string;
+  description?: any; // Portable Text
 };
+
 export type Project = {
   _id: string;
   title: string;
