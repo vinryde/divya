@@ -11,6 +11,7 @@ import { HeroSectionDemo } from "@/components/herosectiontsx";
 import { Feature1 } from "@/components/feature-1";
 import { AemoOne } from "@/components/aboutsenan";
 import NewsSection from "@/components/News";
+import { GlowingEffectDemo } from "@/components/bentocard";
 export default function Home() {
   return (
     <div className="overflow-hidden">
@@ -18,11 +19,11 @@ export default function Home() {
       <AemoOne />
       <ServicesBadge />
       <WhatIDo />
+      <NewsSection/>
       <EventSection/>
       <ProjectsSection/>
-      <NewsSection/>
+      <GlowingEffectDemo/>
       <FeaturedPosts />
-      <DemoOne/>
     </div>
   );
 }

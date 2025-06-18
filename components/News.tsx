@@ -15,10 +15,12 @@ const NewsSection = () => {
 
   return (
     <section className="py-16 px-6">
-      <h2 className="text-3xl font-bold mb-2">Latest News</h2>
-      <p className="text-gray-600 mb-10 max-w-2xl">
+      <div className="mb-12 text-center max-w-3xl mx-auto">
+      <h2 className="text-3xl font-bold mb-2 text-center">Latest News</h2>
+      <p className="text-gray-600 mb-10 max-w-2xl text-center">
         Stay informed with our latest news updates, announcements, and press releases. Explore the highlights and insights shaping our journey and milestones.
       </p>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {newsItems.map((item) => (

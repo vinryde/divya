@@ -15,9 +15,12 @@ export const FeaturedPosts = async () => {
   return (
     <div className="mt-10 bg-gradient-to-t from-gray-200 pb-14">
       <Container>
-        <h2 className="text-2xl font-semibold tracking-wide">
-          My Featured Blog
-        </h2>
+         <div className="mb-12 text-center max-w-3xl mx-auto">
+         <h2 className="text-3xl font-bold mb-4">Featured Posts</h2>
+        <p className="text-base text-muted-foreground">
+        Explore insights, stories, and highlights from our research, outreach, and academic journeys—curated to showcase the latest from Senan Education Lab.
+        </p>
+      </div>
         <div className="mt-6 grid grid-cols-1 gap-8 lg:grid-cols-3">
           {featuredPosts.map((post) => (
             <div
