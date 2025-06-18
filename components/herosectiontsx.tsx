@@ -2,9 +2,11 @@
 
 import { HeroSection } from "@/components/hero-section"
 import { Icons } from "@/components/ui/icons"
+import Container from "./Container"
 
 export function HeroSectionDemo() {
   return (
+  
     <HeroSection
       badge={{
         text: "Follow our latest updates ",
@@ -34,5 +36,6 @@ export function HeroSectionDemo() {
         alt: "UI Components Preview",
       }}
     />
+  
   )
 }

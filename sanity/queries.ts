@@ -4,6 +4,7 @@ import { groq } from "next-sanity";
 import { client } from "./lib/client"; // ✅ relative path based on /sanity/queries.ts location
 import type { OutreachEvent } from "./types";
 import { ProjectDesc } from './types';
+import type { NewsItem } from "./types";
 // Post query
 const FEATURED_POSTS_QUERY =
   defineQuery(`*[_type == "post" && isFeatured == true && defined(slug.current)]|order(publishedAt desc)[0...$quantity]{
@@ -204,6 +205,36 @@ export const getOutreachEventBySlug = async (slug: string): Promise<OutreachEven
       venue,
       description,
       "imageUrl": image.asset->url
+    }`,
+    { slug }
+  );
+};
+export const getNews = async (): Promise<NewsItem[]> => {
+  return await client.fetch(
+    groq`*[_type == "news"] | order(date desc) {
+      _id,
+      headline,
+      subHeading,
+      slug,
+      date,
+      link,
+      description,
+      "imageUrl": featuredImage.asset->url
+    }`
+  );
+};
+
+export const getNewsBySlug = async (slug: string): Promise<NewsItem | null> => {
+  return await client.fetch(
+    groq`*[_type == "news" && slug.current == $slug][0] {
+      _id,
+      headline,
+      subHeading,
+      slug,
+      date,
+      link,
+      description,
+      "imageUrl": featuredImage.asset->url
     }`,
     { slug }
   );

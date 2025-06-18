@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Container from "./Container";
 
 interface Feature1Props {
   title: string;
@@ -31,6 +32,7 @@ export const Feature1 = ({
 }: Feature1Props) => {
   return (
     <section className="py-32">
+      <Container>
       <div className="container">
         <div className="grid items-center gap-8 lg:grid-cols-2">
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left lg:ml-[42px]">
@@ -56,10 +58,11 @@ export const Feature1 = ({
           <img
             src={imageSrc}
             alt={imageAlt}
-            className="max-h-full w-full rounded-[300px] object-cover lg:ml-28 sm:mx-0.5"
+            className="max-h-full w-full rounded-[300px] object-cover"
           />
         </div>
       </div>
+      </Container>
     </section>
   );
 };

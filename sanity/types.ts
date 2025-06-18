@@ -146,6 +146,23 @@ export type ProjectDesc = {
   };
   imageUrl?: string;
 };
+export type NewsItem = {
+  _id: string;
+  headline: string;
+  subHeading?: string;
+  slug: { current: string };
+  date?: string;
+  link?: string;
+  featuredImage?: {
+    asset: {
+      _ref: string;
+      _type: "reference";
+    };
+  };
+  imageUrl?: string;
+  description?: any; // Portable Text
+};
+
 
 
 

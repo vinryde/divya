@@ -35,7 +35,7 @@ const WhatIDo = () => {
     <div className="bg-darkColor text-primaryWhite py-20 md:py-24">
       <Container className="space-y-10">
         <div>
-          <Title className="tracking-widest">What I Do</Title>
+          <Title className="tracking-widest">What We Do</Title>
           <p className="tracking-wide max-w-2xl mt-2 text-primaryWhite/80">
           Advancing education through research-driven innovation, inclusive pedagogy, and sustainable development — building impactful learning ecosystems across disciplines and borders.
           </p>
