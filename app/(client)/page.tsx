@@ -12,13 +12,16 @@ import { Feature1 } from "@/components/feature-1";
 import { AemoOne } from "@/components/aboutsenan";
 import NewsSection from "@/components/News";
 import { GlowingEffectDemo } from "@/components/bentocard";
+import { Partners } from "@/components/partners";
+import AboutPage from "@/components/aboutme";
 export default function Home() {
   return (
     <div className="overflow-hidden">
       <HeroSectionDemo />
-      <AemoOne />
+      <AboutPage/>
       <ServicesBadge />
       <WhatIDo />
+      <Partners/>
       <NewsSection/>
       <EventSection/>
       <ProjectsSection/>

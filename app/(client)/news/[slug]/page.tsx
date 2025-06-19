@@ -10,16 +10,16 @@ export default async function NewsPage({ params }: { params: { slug: string } })
   if (!news) return notFound();
 
   return (
-    <main className="max-w-3xl mx-auto px-4 py-20 space-y-6">
+    <main className="max-w-6xl mx-auto px-4 py-20 space-y-6">
       <h1 className="text-3xl font-bold">{news.headline}</h1>
       {news.subHeading && <h2 className="text-md text-gray-600">{news.subHeading}</h2>}
-      {news.date && <p className="text-sm text-gray-500">{news.date}</p>}
+      {news.date && <p className="text-lg text-gray-500 font-bold">{news.date}</p>}
 
       {news.imageUrl && (
         <img
           src={news.imageUrl}
           alt={news.headline}
-          className="rounded-xl border w-full h-auto max-h-[500px] object-cover"
+          className="rounded-xl border w-full h-auto max-h-[800px] object-cover"
         />
       )}
 
@@ -52,7 +52,7 @@ export default async function NewsPage({ params }: { params: { slug: string } })
                 <Image
                   alt={value.alt || ""}
                   src={image(value).width(2000).url()}
-                  className="w-full rounded-2xl"
+                  className="w-full rounded-2xl  "
                   width={1400}
                   height={1000}
                 />

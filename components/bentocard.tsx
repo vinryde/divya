@@ -11,7 +11,7 @@ export function GlowingEffectDemo() {
     <section className="py-20">
       {/* Section Heading */}
       <div className="mb-12 text-center max-w-3xl mx-auto">
-        <h2 className="text-3xl font-bold mb-4">What We Do</h2>
+        <h2 className="text-3xl font-bold mb-4">Explore Our Journey</h2>
         <p className="text-base text-muted-foreground">
           Through research, outreach, and innovation, Senan Education Lab
           advances educational equity, fosters interdisciplinary collaboration,

@@ -6,6 +6,8 @@
     --radius: 0.5rem;
     --brand: 27 96% 61%;
     --brand-foreground: 31 97% 72%;
+    --gradient-color: #8350e8;
+    --sparkles-color: #8350e8;
   }
   .hoverEffect {
     @apply transition-all ease-in-out duration-300;
@@ -19,6 +21,8 @@
   }
   .dark {
     --brand: 31 97% 72%;
+    --gradient-color: #8350e8;
+    --sparkles-color: #ffffff;
   }
 }
 
