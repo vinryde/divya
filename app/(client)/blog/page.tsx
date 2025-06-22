@@ -19,7 +19,7 @@ const BlogPage = async () => {
               Learn More About LifeStyle
             </h1>
             <p className="text-xl md:text-2xl mb-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+              hihi ipsum dolor sit amet consectetur adipisicing elit. Accusamus
               culpa nulla iure, ad amet.
             </p>
             <Button size="lg" variant="secondary">

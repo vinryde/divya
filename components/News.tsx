@@ -14,7 +14,7 @@ const NewsSection = () => {
   }, []);
 
   return (
-    <section className="py-16 px-6">
+    <section className="py-16 px-6 sm:px-4">
       <div className="mb-12 text-center max-w-3xl mx-auto">
       <h2 className="text-3xl font-bold mb-2 text-center">Latest News</h2>
       <p className="text-gray-600 mb-10 max-w-2xl text-center">

@@ -5,11 +5,19 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 import React from "react";
 import { HeroSectionAcademics } from "@/components/heroacademics";
+import { EvervaultCardDemo } from "@/components/cardnew";
+import { EvervaultCardTwo } from "@/components/cardtwo";
+import { EvervaultCardThree } from "@/components/cardthree";
+import { SectionTitle } from "@/components/sectionheder";
 
 const ServicesPage = () => {
   return (
     <div>
       <HeroSectionAcademics/>
+      <SectionTitle/>
+      <EvervaultCardDemo />
+      <EvervaultCardTwo />
+      <EvervaultCardThree />
       <ServicesBadge />
       <Projects className="pt-0 md:pt-0" />
     </div>
