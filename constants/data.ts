@@ -1,8 +1,8 @@
 export const headerLinks = [
-  { label: "Divya", href: "/" },
+  { label: "Home", href: "/" },
   { label: "Academics", href: "/academics" },
   { label: "Research", href: "/projects" },
-  { label: "Team", href: "/blog" },
+  { label: "Team", href: "/team" },
   { label: "Outreach", href: "/about" },
   { label: "Publications", href: "/contact" },
   { label: "Gallery", href: "/contact" },
@@ -21,7 +21,7 @@ export const footerLinks = [
     title: "Useful links",
     link: "/",
     data: [
-      { label: "Divya", href: "/" },
+      { label: "Home", href: "/" },
       { label: "Academics", href: "/services" },
       { label: "Research", href: "/projects" },
       { label: "Team", href: "/blog" },

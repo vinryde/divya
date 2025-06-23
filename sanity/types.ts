@@ -162,6 +162,21 @@ export type NewsItem = {
   imageUrl?: string;
   description?: any; // Portable Text
 };
+export type TeamMember = {
+  _id: string;
+  name: string;
+  designation: string;
+  email?: string;
+  category?: string;
+  image?: {
+    asset: {
+      _ref: string;
+      _type: 'reference';
+    };
+  };
+  imageUrl?: string;
+  description?: string;
+};
 
 
 

@@ -5,6 +5,7 @@ import { client } from "./lib/client"; // ✅ relative path based on /sanity/que
 import type { OutreachEvent } from "./types";
 import { ProjectDesc } from './types';
 import type { NewsItem } from "./types";
+import type { TeamMember } from "./types";
 // Post query
 const FEATURED_POSTS_QUERY =
   defineQuery(`*[_type == "post" && isFeatured == true && defined(slug.current)]|order(publishedAt desc)[0...$quantity]{
@@ -257,6 +258,103 @@ export const getProjectsDesc = async (): Promise<ProjectDesc[]> => {
     }`
   );
 };
+export const getTeam = async (): Promise<TeamMember[]> => {
+  return await client.fetch(
+    groq`*[_type == "team"] | order(name asc) {
+      _id,
+      name,
+      designation,
+      email,
+      category,
+      slug,
+      description,
+      "imageUrl": image.asset->url,
+      "imageAlt": image.alt
+    }`
+  );
+};
+
+// Get Single Member by Slug
+export const getTeamMemberBySlug = async (slug: string): Promise<TeamMember | null> => {
+  return await client.fetch(
+    groq`*[_type == "team" && slug.current == $slug][0] {
+      _id,
+      name,
+      designation,
+      email,
+      category,
+      slug,
+      description,
+      "imageUrl": image.asset->url,
+      "imageAlt": image.alt
+    }`,
+    { slug }
+  );
+};
+export const getProjectAssociates = async (): Promise<TeamMember[]> => {
+  return await client.fetch(
+    groq`*[_type == "team" && category == "project-associates"] | order(_createdAt asc) {
+      _id,
+      name,
+      designation,
+      category,
+      email,
+      slug,
+      description,
+      "imageUrl": image.asset->url,
+      "imageAlt": image.alt
+    }`
+  );
+};
+export const getPostDoctoralFellows = async (): Promise<TeamMember[]> => {
+  return await client.fetch(
+    groq`*[_type == "team" && category == "post-doctoral-fellows"] | order(_createdAt asc) {
+      _id,
+      name,
+      designation,
+      category,
+      email,
+      slug,
+      description,
+      "imageUrl": image.asset->url,
+      "imageAlt": image.alt
+    }`
+  );
+};
+export const getInternationalDoctoralScholars = async (): Promise<TeamMember[]> => {
+  return await client.fetch(
+    groq`*[_type == "team" && category == "international-doctoral-scholars"] | order(_createdAt asc) {
+      _id,
+      name,
+      designation,
+      category,
+      email,
+      slug,
+      description,
+      "imageUrl": image.asset->url,
+      "imageAlt": image.alt
+    }`
+  );
+};
+export const getDoctoralScholars = async (): Promise<TeamMember[]> => {
+  return await client.fetch(
+    groq`*[_type == "team" && category == "doctoral-scholars"] | order(_createdAt asc) {
+      _id,
+      name,
+      designation,
+      category,
+      email,
+      slug,
+      description,
+      "imageUrl": image.asset->url,
+      "imageAlt": image.alt
+    }`
+  );
+};
+
+
+
+
 
 
 

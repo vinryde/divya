@@ -10,7 +10,7 @@ const Footer = () => {
     <div className="py-12 bg-primary/5">
       <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-8 gap-5 lg:gap-20">
         <div className="flex flex-col gap-3 lg:col-span-3">
-          <Logo className="w-[88px]">Divya</Logo>
+          <Logo>Senan Education Lab</Logo>
           <p className="text-sm tracking-wide">
           An educator, researcher, and innovator dedicated to transforming education through sustainability, technology, and equity-focused outreach. Her global collaborations and leadership in teacher education shape future-ready learning environments and inclusive academic practices.
           </p>

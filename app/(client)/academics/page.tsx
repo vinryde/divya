@@ -18,8 +18,6 @@ const ServicesPage = () => {
       <EvervaultCardDemo />
       <EvervaultCardTwo />
       <EvervaultCardThree />
-      <ServicesBadge />
-      <Projects className="pt-0 md:pt-0" />
     </div>
   );
 };
