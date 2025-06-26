@@ -11,7 +11,7 @@ export function HeroSectionAcademics() {
         text: "Follow our latest updates ",
         action: {
           text: "Learn more",
-          href: "/docs",
+          href: "/",
         },
       }}
       title="ACADEMICS"
@@ -19,12 +19,12 @@ export function HeroSectionAcademics() {
       actions={[
         {
           text: "Contact",
-          href: "/docs/getting-started",
+          href: "/",
           variant: "default",
         },
         {
           text: "Projects",
-          href: "https://github.com/your-repo",
+          href: "/",
           variant: "glow",
           icon: <Icons.gitHub className="h-5 w-5" />,
         },

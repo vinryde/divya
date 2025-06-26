@@ -12,7 +12,7 @@ export function HeroSectionDemo() {
         text: "Follow our latest updates ",
         action: {
           text: "Learn more",
-          href: "/docs",
+          href: "/",
         },
       }}
       title="SENAN EDUCATION LAB"
@@ -20,12 +20,12 @@ export function HeroSectionDemo() {
       actions={[
         {
           text: "Contact",
-          href: "/docs/getting-started",
+          href: "/",
           variant: "default",
         },
         {
           text: "Projects",
-          href: "https://github.com/your-repo",
+          href: "/",
           variant: "glow",
           icon: <Icons.gitHub className="h-5 w-5" />,
         },

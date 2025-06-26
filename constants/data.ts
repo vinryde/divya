@@ -1,11 +1,11 @@
 export const headerLinks = [
   { label: "Home", href: "/" },
   { label: "Academics", href: "/academics" },
-  { label: "Research", href: "/projects" },
+  { label: "Research", href: "/research" },
   { label: "Team", href: "/team" },
-  { label: "Outreach", href: "/about" },
-  { label: "Publications", href: "/contact" },
-  { label: "Gallery", href: "/contact" },
+  { label: "Outreach", href: "/outreach" },
+  { label: "Publications", href: "/publications" },
+  { label: "Gallery", href: "/gallery" },
   
 ];
 
@@ -22,12 +22,12 @@ export const footerLinks = [
     link: "/",
     data: [
       { label: "Home", href: "/" },
-      { label: "Academics", href: "/services" },
-      { label: "Research", href: "/projects" },
-      { label: "Team", href: "/blog" },
-      { label: "Outreach", href: "/about" },
-      { label: "Publications", href: "/contact" },
-      { label: "Gallery", href: "/contact" },
+      { label: "Academics", href: "/academics" },
+      { label: "Research", href: "/" },
+      { label: "Team", href: "/team" },
+      { label: "Outreach", href: "/" },
+      { label: "Publications", href: "/" },
+      { label: "Gallery", href: "/" },
       
     ],
   },
@@ -38,7 +38,7 @@ export const footerLinks = [
       { label: "Closed Projects", href: "/"},
       { label: "Running Projects", href: "/"},
       { label: "Consultancy", href: "/"},
-      { label: "Team", href: "/"},
+      { label: "Team", href: "/team"},
      
      
     ],

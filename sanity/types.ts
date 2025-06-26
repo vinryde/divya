@@ -178,6 +178,29 @@ export type TeamMember = {
   description?: string;
 };
 
+// sanity/types.ts
+
+export type AlumniMember = {
+  _id: string;
+  name: string;
+  designation: string;
+  email?: string;
+  slug: {
+    current: string;
+  };
+  description?: string;
+  image?: {
+    asset: {
+      _ref: string;
+      _type: 'reference';
+    };
+    alt?: string;
+  };
+  imageUrl?: string;
+  imageAlt?: string;
+};
+
+
 
 
 

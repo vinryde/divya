@@ -6,6 +6,7 @@ import type { OutreachEvent } from "./types";
 import { ProjectDesc } from './types';
 import type { NewsItem } from "./types";
 import type { TeamMember } from "./types";
+import type { AlumniMember } from "./types";
 // Post query
 const FEATURED_POSTS_QUERY =
   defineQuery(`*[_type == "post" && isFeatured == true && defined(slug.current)]|order(publishedAt desc)[0...$quantity]{
@@ -351,7 +352,51 @@ export const getDoctoralScholars = async (): Promise<TeamMember[]> => {
     }`
   );
 };
+export const getAspireScholars = async (): Promise<TeamMember[]> => {
+  return await client.fetch(
+    groq`*[_type == "team" && category == "aspire-scholars"] | order(_createdAt asc) {
+      _id,
+      name,
+      designation,
+      category,
+      email,
+      slug,
+      description,
+      "imageUrl": image.asset->url,
+      "imageAlt": image.alt
+    }`
+  );
+};
+export const getAllAlumni = async (): Promise<AlumniMember[]> => {
+  return await client.fetch(
+    groq`*[_type == "alumni"] | order(_createdAt asc) {
+      _id,
+      name,
+      designation,
+      email,
+      slug,
+      description,
+      "imageUrl": image.asset->url,
+      "imageAlt": image.alt
+    }`
+  );
+};
 
+export const getAlumniBySlug = async (slug: string): Promise<AlumniMember | null> => {
+  return await client.fetch(
+    groq`*[_type == "alumni" && slug.current == $slug][0] {
+      _id,
+      name,
+      designation,
+      email,
+      slug,
+      description,
+      "imageUrl": image.asset->url,
+      "imageAlt": image.alt
+    }`,
+    { slug }
+  );
+};
 
 
 

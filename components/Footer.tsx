@@ -12,8 +12,7 @@ const Footer = () => {
         <div className="flex flex-col gap-3 lg:col-span-3">
           <Logo>Senan Education Lab</Logo>
           <p className="text-sm tracking-wide">
-          An educator, researcher, and innovator dedicated to transforming education through sustainability, technology, and equity-focused outreach. Her global collaborations and leadership in teacher education shape future-ready learning environments and inclusive academic practices.
-          </p>
+          Senan Education Lab pioneers inclusive, tech-driven, and sustainability-focused educational research, outreach, and innovation through global collaboration and community impact. </p>
           <SocialLinks />
         </div>
         <div className="hidden lg:inline-flex" />

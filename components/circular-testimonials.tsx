@@ -322,8 +322,7 @@ export const CircularTestimonials = ({
         .quote {
           line-height: 1.75;
           text-align: left;
-          max-width: 850px; /* ← increase this value as needed */
-  width: 100%;
+          
         }
         .arrow-buttons {
           display: flex;

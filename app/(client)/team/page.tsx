@@ -4,6 +4,8 @@ import { SectionIntro } from "@/components/Sectionintro";
 import { TeamPostDoctoralFellows } from "@/components/postdoctoral";
 import { TeamInternationalDoctoralScholars } from "@/components/TeamInternational";
 import { TeamDoctoralScholars } from "@/components/TeamDoctoral";
+import { TeamAspireScholars } from "@/components/TeamAspireScholars";
+
 
 const WordsOne=[{text:"Project"},
   {text:"Associates"},
@@ -23,6 +25,9 @@ const DescriptionThree="Bringing global perspectives to local challenges, our in
 const WordsFour=[{text:"Doctoral"},{text:"Scholars"}]
 const DescriptionFour="Our doctoral scholars drive research across education, technology, inclusion, and sustainability—contributing fresh insights and innovations that align with the lab’s mission of transformative learning and global collaboration."
 
+const WordsFive = [{ text: "Aspire" }, { text: "Scholars" }];
+const DescriptionFive ="Empowering early-career researchers with mentorship and opportunities, Aspire Scholars are future academic leaders exploring inclusive, equitable educational practices.";
+
 
 
 
@@ -41,6 +46,9 @@ const TeamPage = () => {
         <TeamInternationalDoctoralScholars />
         <SectionIntro words={WordsFour} description={DescriptionFour} />
         <TeamDoctoralScholars />
+        <SectionIntro words={WordsFive} description={DescriptionFive} />
+        <TeamAspireScholars />
+
         
       </div>
     );
