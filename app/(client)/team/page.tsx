@@ -5,6 +5,7 @@ import { TeamPostDoctoralFellows } from "@/components/postdoctoral";
 import { TeamInternationalDoctoralScholars } from "@/components/TeamInternational";
 import { TeamDoctoralScholars } from "@/components/TeamDoctoral";
 import { TeamAspireScholars } from "@/components/TeamAspireScholars";
+import { AlumniTestimonials } from "@/components/stagger-testimonials";
 
 
 const WordsOne=[{text:"Project"},
@@ -28,9 +29,8 @@ const DescriptionFour="Our doctoral scholars drive research across education, te
 const WordsFive = [{ text: "Aspire" }, { text: "Scholars" }];
 const DescriptionFive ="Empowering early-career researchers with mentorship and opportunities, Aspire Scholars are future academic leaders exploring inclusive, equitable educational practices.";
 
-
-
-
+const WordsSix=[{text:"Alumni"}]
+const DescriptionSix="Our Alumni have made significant contributions to the field, and their stories continue to inspire and inform the future of education research.";
 
 
 
@@ -48,6 +48,9 @@ const TeamPage = () => {
         <TeamDoctoralScholars />
         <SectionIntro words={WordsFive} description={DescriptionFive} />
         <TeamAspireScholars />
+        <SectionIntro words={WordsSix} description={DescriptionSix} />
+        <AlumniTestimonials />
+
 
         
       </div>
