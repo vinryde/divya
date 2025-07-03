@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { getOutreachEvents } from "@/sanity/queries";
 import type { OutreachEvent } from "@/sanity/types";
+import { ShineBorder } from "@/components/magicui/shine-border";
 import Link from "next/link";
 
 const EventSection = () => {
@@ -24,6 +25,7 @@ const EventSection = () => {
           </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-7xl">
+        
         {events.length === 0 ? (
           <p className="text-gray-500">No events available.</p>
         ) : (
@@ -32,6 +34,7 @@ const EventSection = () => {
               key={event._id}
               className="bg-white rounded-md shadow border p-6 max-w-2xl w-full"
             >
+              
               <h2 className="text-xl font-semibold text-gray-900">
                 {event.title}
               </h2>

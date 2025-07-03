@@ -18,6 +18,7 @@
   .theme {
     --animate-appear: appear 0.5s ease-out forwards;
     --animate-appear-zoom: appear-zoom 0.5s ease-out forwards;
+    --animate-shine: shine var(--duration) infinite linear;
   }
   .dark {
     --brand: 31 97% 72%;
@@ -65,6 +66,17 @@
   100% {
     opacity: 1;
     transform: scale(1);
+    }
+  }
+  @keyframes shine {
+  0% {
+    background-position: 0% 0%;
+    }
+  50% {
+    background-position: 100% 100%;
+    }
+  to {
+    background-position: 0% 0%;
     }
   }
 }
