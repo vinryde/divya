@@ -71,7 +71,7 @@ export function HeroSection({
           </h1>
 
           {/* Description */}
-          <p className="text-md relative z-10 max-w-[550px] animate-appear font-medium text-neutral-500 opacity-0 delay-100 sm:text-xl dark:text-neutral-400">
+          <p className="text-md relative z-10 max-w-[550px] animate-appear font-medium text-slate-700 opacity-0 delay-100 sm:text-xl">
             {description}
           </p>
 
