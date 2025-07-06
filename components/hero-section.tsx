@@ -71,7 +71,7 @@ export function HeroSection({
           </h1>
 
           {/* Description */}
-          <p className="text-md relative z-10 max-w-[550px] animate-appear font-medium text-slate-700 opacity-0 delay-100 sm:text-xl">
+          <p className="text-md relative z-10 max-w-[550px] animate-appear font-medium text-neutral-500   sm:text-xl">
             {description}
           </p>
 
@@ -107,7 +107,7 @@ export function HeroSection({
             </MockupFrame>
             <Glow
               variant="top"
-              className="animate-appear-zoom opacity-0 delay-1000"
+              className="animate-appear-zoom opacity-0"
             />
           </div>
         </div>

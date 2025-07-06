@@ -31,7 +31,7 @@ export function HeroSectionDemo() {
         },
       ]}
       image={{
-        light: "https://www.keralauniversity.ac.in/images/2000x700_senate_house.jpg",
+        light: "https://upload.wikimedia.org/wikipedia/commons/5/5f/University_of_Kerala.jpg",
         dark: "https://upload.wikimedia.org/wikipedia/commons/5/5f/University_of_Kerala.jpg",
         alt: "UI Components Preview",
       }}
