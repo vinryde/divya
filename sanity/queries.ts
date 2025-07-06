@@ -259,6 +259,25 @@ export const getProjectsDesc = async (): Promise<ProjectDesc[]> => {
     }`
   );
 };
+
+export const getProjectDescBySlug = async (slug: string): Promise<ProjectDesc | null> => {
+  return await client.fetch(
+    groq`*[_type == "projectdesc" && slug.current == $slug][0] {
+      _id,
+      title,
+      slug,
+      sanctionedBudget,
+      fundedBy,
+      yearsActive,
+      status,
+      description,
+      "imageUrl": image.asset->url,
+      "imageAlt": image.alt
+    }`,
+    { slug }
+  );
+};
+
 export const getTeam = async (): Promise<TeamMember[]> => {
   return await client.fetch(
     groq`*[_type == "team"] | order(name asc) {

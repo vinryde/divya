@@ -9,6 +9,7 @@ import React, {
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import { LiquidButton } from "./liquid-glass-button";
 
 interface Testimonial {
   quote: string;
@@ -245,13 +246,15 @@ export const CircularTestimonials = ({
   ))}
 </motion.p>
 {activeTestimonial.email && (
-  <Link
-    href={`mailto:${activeTestimonial.email}`}
-    className="inline-block mt-4 px-4 py-2 bg-black text-white rounded-full text-sm hover:bg-blue-700 transition duration-300"
-  >
-    Email
-  </Link>
-)}
+                <a
+                  href={`mailto:${activeTestimonial.email}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-4 mb-2 py-2 w-1/4"
+                >
+                  <LiquidButton className="w-full">Email</LiquidButton>
+                </a>
+              )}
 
             </motion.div>
           </AnimatePresence>

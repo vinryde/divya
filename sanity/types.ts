@@ -133,6 +133,7 @@ export type ProjectDesc = {
   _id: string;
   title: string;
   sanctionedBudget: number;
+  slug: { current: string };
   fundedBy: string;
   yearsActive: string;
   status: 'running' | 'closed';
