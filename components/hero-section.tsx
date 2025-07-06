@@ -76,8 +76,8 @@ export function HeroSection({
           </p>
 
           {/* Actions */}
-          <div className="relative z-10 flex animate-appear justify-center gap-4 opacity-0 delay-300">
-            <div className="relative z-10 flex animate-appear justify-center gap-4 opacity-0 delay-300">
+          <div className="relative z-10 flex animate-appear justify-center gap-4  delay-300">
+            <div className="relative z-10 flex animate-appear justify-center gap-4  delay-300">
               {actions.map((action, index) => (
                 <Button key={index} size="lg" asChild>
                   <a href={action.href} className="flex items-center gap-2">
@@ -92,7 +92,7 @@ export function HeroSection({
           {/* Image with Glow */}
           <div className="relative pt-12">
             <MockupFrame
-              className="animate-appear opacity-0 delay-700"
+              className="animate-appear  delay-700"
               size="small"
             >
               <Mockup type="responsive">
@@ -107,7 +107,7 @@ export function HeroSection({
             </MockupFrame>
             <Glow
               variant="top"
-              className="animate-appear-zoom opacity-0"
+              className="animate-appear-zoom"
             />
           </div>
         </div>
