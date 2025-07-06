@@ -2,7 +2,7 @@
 
 import { HeroSection } from "@/components/hero-section"
 import { Icons } from "@/components/ui/icons"
-import Container from "./Container"
+
 
 export function HeroSectionDemo() {
   return (
@@ -26,8 +26,8 @@ export function HeroSectionDemo() {
         {
           text: "Projects",
           href: "/",
-          variant: "glow",
-          icon: <Icons.gitHub className="h-5 w-5" />,
+          variant: "default",
+          
         },
       ]}
       image={{
