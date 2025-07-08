@@ -20,35 +20,43 @@ export function GlowingEffectDemo() {
         </p>
       </div>
     <ul className="grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2 mb-6 mx-4">
+
       <GridItem
         area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]"
         icon={<UserSearch className="h-4 w-4" />}
         title="Research that Shapes Tomorrow"
         description="Our research advances AI in education, energy literacy, STEM equity, and climate education through globally funded, interdisciplinary, technology-driven collaborations."
+        href= "/projects"
       />
+  
+    
       <GridItem
         area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
         icon={<Users className="h-4 w-4" />}
         title="Meet the Minds Behind the Mission"
         description="Click to discover our multidisciplinary team of researchers who bring expertise in robotics, sustainability, blended learning, and child development to support cross-cultural, impact-driven educational innovation."
+        href= "/team"
       />
       <GridItem
         area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
         icon={<BookOpenCheck className="h-4 w-4" />}
         title="Where Knowledge Meets Community"
         description="Our outreach bridges academia and society through programs on cyber safety, menstrual health, climate resilience, and science literacy. We actively engage women, students, and educators through fieldwork, workshops, and interactive learning tools."
+        href="/outreach"
       />
       <GridItem
         area="md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]"
         icon={<Sparkles className="h-4 w-4" />}
         title="Knowledge that Travels"
         description="Senan Education Lab’s contributions span  journals, policy chapters, international conference proceedings, etc, advancing theory and practice in energy education, learning engineering, and inclusive curriculum design."
+        href="/"
       />
       <GridItem
         area="md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]"
         icon={<LaptopMinimalCheck className="h-4 w-4" />}
         title="Innovation & Tools"
         description="The lab has developed educational apps like PEERA, instructional multimedia packages like OptoQuest, and tools for blended learning, all built on evidence-based practices to foster curiosity, creativity, and critical thinking."
+        href="/"
       />
     </ul>
     </section>
@@ -60,12 +68,13 @@ interface GridItemProps {
   icon: React.ReactNode;
   title: string;
   description: React.ReactNode;
+  href: string;
 }
 
-const GridItem = ({ area, icon, title, description }: GridItemProps) => {
+const GridItem = ({ area, icon, title, description, href }: GridItemProps) => {
   return (
     <li className={cn("min-h-[14rem] list-none", area)}>
-      <Link href="./" className="block h-full">
+        <Link href ={href}>
         <div className="relative h-full rounded-[1.25rem] border-[0.75px] border-border p-2 md:rounded-[1.5rem] md:p-3 hover:shadow-md transition-all">
           <GlowingEffect
             spread={40}

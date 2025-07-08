@@ -16,15 +16,13 @@ import { Partners } from "@/components/partners";
 import AboutPage from "@/components/aboutme";
 export default function Home() {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-x-hidden">
       <HeroSectionDemo />
       <ServicesBadge />
       <WhatIDo />
       <Partners/>
       <NewsSection/>
       <AboutPage/>
-      <EventSection/>
-      <ProjectsSection/>
       <GlowingEffectDemo/>
       <FeaturedPosts />
     </div>

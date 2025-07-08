@@ -1,9 +1,8 @@
 "use client"
 
 import { HeroSection } from "@/components/hero-section"
-import { Icons } from "@/components/ui/icons"
 
-export function HeroSectionResearch() {
+export function HeroSectionPubs() {
   return (
   
     <HeroSection
@@ -14,8 +13,8 @@ export function HeroSectionResearch() {
           href: "/",
         },
       }}
-      title="Research"
-      description="Discover the lab’s diverse research projects driving innovation in education, sustainability, and technology- shaping meaningful change through evidence-based inquiry."
+      title="PUBLICATIONS"
+      description="Explore our publications showcasing research, insights, and innovations that advance education, sustainability, and inclusive learning practices"
       actions={[
         {
           text: "Contact",
@@ -23,8 +22,8 @@ export function HeroSectionResearch() {
           variant: "default",
         },
         {
-          text: "Outreach",
-          href: "/outreach",
+          text: "Projects",
+          href: "/",
           variant: "glow",
           
         },

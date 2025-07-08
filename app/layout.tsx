@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Divya  | Academician",
-  description: "Portfolio website for educational purposes",
+  title: "Senan Education Lab",
+  description: "Senan Education Lab advances research and innovation in education, sustainability, and technology. Explore projects, outreach, and resources empowering educators and communities worldwide.",
 };
 
 export default function RootLayout({
