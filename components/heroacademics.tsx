@@ -26,7 +26,7 @@ export function HeroSectionAcademics() {
           text: "Projects",
           href: "/",
           variant: "glow",
-          icon: <Icons.gitHub className="h-5 w-5" />,
+          
         },
       ]}
       image={{
