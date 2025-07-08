@@ -1,15 +1,12 @@
-import Container from "@/components/Container";
-import Projects from "@/components/Projects";
-import { Button } from "@/components/ui/button";
-import { ArrowDown } from "lucide-react";
+import { HeroSectionResearch } from "@/components/herosectionresearch";
 import React from "react";
+import ProjectsSection from "@/components/projectlist";
 
 const ProjectsPage = () => {
   return (
     <div>
-      
-
-      <Projects />
+      <HeroSectionResearch />
+      <ProjectsSection />
     </div>
   );
 };

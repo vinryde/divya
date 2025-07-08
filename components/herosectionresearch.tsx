@@ -3,7 +3,7 @@
 import { HeroSection } from "@/components/hero-section"
 import { Icons } from "@/components/ui/icons"
 
-export function HeroSectionAcademics() {
+export function HeroSectionResearch() {
   return (
   
     <HeroSection
@@ -14,8 +14,8 @@ export function HeroSectionAcademics() {
           href: "/",
         },
       }}
-      title="ACADEMICS"
-      description="Senan Education Lab designs transformative, research-driven academic programs that integrate sustainability, innovation, and inclusive practices in teacher education."
+      title="Research"
+      description="Discover the lab’s diverse research projects driving innovation in education, sustainability, and technology- shaping meaningful change through evidence-based inquiry."
       actions={[
         {
           text: "Contact",
@@ -23,8 +23,8 @@ export function HeroSectionAcademics() {
           variant: "default",
         },
         {
-          text: "Team",
-          href: "/team",
+          text: "Projects",
+          href: "/outreach",
           variant: "glow",
           
         },
