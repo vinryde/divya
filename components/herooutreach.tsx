@@ -24,9 +24,8 @@ export function HeroSectionOutreach() {
         },
         {
           text: "Projects",
-          href: "/",
+          href: "/projects",
           variant: "glow",
-          icon: <Icons.gitHub className="h-5 w-5" />,
         },
       ]}
       image={{

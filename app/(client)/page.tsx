@@ -18,11 +18,11 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       <HeroSectionDemo />
-      <AboutPage/>
       <ServicesBadge />
       <WhatIDo />
       <Partners/>
       <NewsSection/>
+      <AboutPage/>
       <EventSection/>
       <ProjectsSection/>
       <GlowingEffectDemo/>

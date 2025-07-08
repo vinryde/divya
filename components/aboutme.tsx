@@ -20,7 +20,7 @@ const AboutPage = () => {
           </div>
           <div className="p-8">
             <div className="uppercase tracking-wide text-sm text-darkOrange font-bold">
-              Academician
+              Project Director
             </div>
             <h1 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-darkColor sm:text-4xl">
               Divya C. Senan Ph.D.
@@ -46,7 +46,7 @@ const AboutPage = () => {
             Dr. Senan is a Fulbright-Nehru and UGC-Raman Postdoctoral Fellow
             and recipient of multiple national honours, including the Best Teacher Educator Award (NCTE, MHRD) and the
             Chanakya Award (IITE). Her core research interests centre on educational technology integration, energy education,
-            and inclusive, sustainability-focused pedagogical innovaƟons. Her work is informed by interdisciplinary collaboration
+            and inclusive, sustainability-focused pedagogical innovations. Her work is informed by interdisciplinary collaboration
             and cross-cultural educational frameworks.
           </p>
         </div>

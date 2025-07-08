@@ -1,7 +1,7 @@
 export const headerLinks = [
   { label: "Home", href: "/" },
   { label: "Academics", href: "/academics" },
-  { label: "Research", href: "/research" },
+  { label: "Research", href: "/projects" },
   { label: "Team", href: "/team" },
   { label: "Outreach", href: "/outreach" },
   { label: "Publications", href: "/publications" },
