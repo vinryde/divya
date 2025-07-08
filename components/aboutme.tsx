@@ -9,9 +9,9 @@ const AboutPage = () => {
     <Container className="bg-white text-darkColor py-10 md:py-20">
       <div>
         <div className="md:flex">
-          <div className="md:flex-shrink-0 sm:flex sm:justify-start">
+          <div className="md:flex-shrink-0 ">
             <Image
-              className="h-48 w-full object-contain md:w-48"
+              className="h-48 object-contain md:w-48"
               src={hero}
               alt="Profile picture"
               width={192}
@@ -22,7 +22,7 @@ const AboutPage = () => {
             <div className="uppercase tracking-wide text-sm text-darkOrange font-bold">
               Project Director
             </div>
-            <h1 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-darkColor sm:text-4xl">
+            <h1 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-darkColor sm:text-3xl">
               Divya C. Senan Ph.D.
             </h1>
             <p className="mt-4 max-w-2xl text-lg text-darkColor/80">
