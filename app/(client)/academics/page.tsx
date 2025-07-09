@@ -9,11 +9,14 @@ import { EvervaultCardDemo } from "@/components/cardnew";
 import { EvervaultCardTwo } from "@/components/cardtwo";
 import { EvervaultCardThree } from "@/components/cardthree";
 import { SectionTitle } from "@/components/sectionheder";
+import { Partners } from "@/components/partners";
 
 const ServicesPage = () => {
   return (
     <div>
+      
       <HeroSectionAcademics/>
+      <Partners />
       <SectionTitle/>
       <EvervaultCardDemo />
       <EvervaultCardTwo />

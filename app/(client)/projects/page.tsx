@@ -1,12 +1,12 @@
 import { HeroSectionResearch } from "@/components/herosectionresearch";
 import React from "react";
-import ProjectsSection from "@/components/projectlist";
+import { ProjectStatusGrid } from "@/components/projectsnew";
 
 const ProjectsPage = () => {
   return (
     <div>
       <HeroSectionResearch />
-      <ProjectsSection />
+      <ProjectStatusGrid />
     </div>
   );
 };

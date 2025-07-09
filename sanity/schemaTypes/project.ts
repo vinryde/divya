@@ -53,6 +53,11 @@ export const project = defineType({
       },
     }),
     defineField({
+      name: "subHeading",
+      title: "Sub-heading",
+      type: "string",
+    }),
+    defineField({
       name: 'description',
       title: 'Project Description',
       type: 'blockContent', // make sure blockContent is defined in your schema

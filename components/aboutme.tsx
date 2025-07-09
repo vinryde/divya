@@ -9,7 +9,7 @@ const AboutPage = () => {
     <Container className="bg-white text-darkColor py-10 md:py-20">
       <div>
         <div className="md:flex">
-          <div className="md:flex-shrink-0 ">
+          <div className="md:flex-shrink-0">
             <Image
               className="h-48 object-contain md:w-48"
               src={hero}

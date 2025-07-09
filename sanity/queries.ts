@@ -253,6 +253,7 @@ export const getProjectsDesc = async (): Promise<ProjectDesc[]> => {
       fundedBy,
       yearsActive,
       status,
+      subHeading,
       description,
       "imageUrl": image.asset->url,
       "imageAlt": image.alt

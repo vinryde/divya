@@ -137,6 +137,7 @@ export type ProjectDesc = {
   fundedBy: string;
   yearsActive: string;
   status: 'running' | 'closed';
+  subHeading?: string;
   description: any; // Portable Text
   image?: {
     asset: {

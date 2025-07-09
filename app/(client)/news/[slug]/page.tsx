@@ -19,7 +19,7 @@ export default async function NewsPage({ params }: { params: { slug: string } })
         <img
           src={news.imageUrl}
           alt={news.headline}
-          className="rounded-xl border w-full h-auto max-h-[800px] object-cover"
+          className="rounded-xl border  h-auto max-h-[800px] object-contain justify-self-center"
         />
       )}
 

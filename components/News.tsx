@@ -22,9 +22,9 @@ const NewsSection = () => {
       </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
         {newsItems.map((item) => (
-          <div key={item._id} className="border rounded-lg p-4 shadow-sm">
+          <div key={item._id} className="border rounded-lg p-6 shadow-sm max-w-2xl w-full">
             
 
             {/* IMAGE */}
@@ -32,7 +32,7 @@ const NewsSection = () => {
               <img
                 src={item.imageUrl}
                 alt={item.headline}
-                className="rounded-md mb-4 w-full object-cover max-h-96"
+                className="rounded-lg mb-4 w-full object-contain max-h-96"
               />
             )}
             {/* DATE */}
