@@ -245,7 +245,7 @@ export const getNewsBySlug = async (slug: string): Promise<NewsItem | null> => {
 
 export const getProjectsDesc = async (): Promise<ProjectDesc[]> => {
   return await client.fetch(
-    groq`*[_type == "projectdesc"] | order(_createdAt desc) {
+    groq`*[_type == "projectdesc"] | order(_createdAt asc) {
       _id,
       title,
       slug,

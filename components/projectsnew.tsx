@@ -20,7 +20,7 @@ export const ProjectStatusGrid: React.FC = () => {
 
   return (
     <section className="py-10">
-      <div className="container mx-auto px-4 space-y-12">
+      <div className="mx-auto md:px-16 sm:px-4 space-y-12">
         {/* Running Projects */}
         <div>
           <h2 className="text-2xl font-bold mb-2">Running Projects</h2>

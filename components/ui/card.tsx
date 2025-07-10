@@ -233,7 +233,7 @@ const Card = React.forwardRef<HTMLDivElement, CardProps>(
     if (variant === "inner") {
       return (
         <div ref={ref} className={cn(cardVariants({ variant, className }))} {...props}>
-          <div className="border rounded-sm bg-gradient-to-br from-white to-zinc-200/60 border-zinc-300 shadow-[2px_0_8px_rgba(0,_0,_0,_0.15)] dark:from-zinc-950 dark:to-zinc-900/60 dark:border-zinc-900/50 dark:shadow-inner">
+          <div className="border rounded-sm bg-gradient-to-br from-white to-zinc-200/60 border-zinc-300 shadow-[2px_0_8px_rgba(0,_0,_0,_0.15)] dark:from-zinc-950 dark:to-zinc-900/60 dark:border-zinc-900/50 dark:shadow-inner sm:w-full">
             {mainContent}
           </div>
         </div>
