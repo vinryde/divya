@@ -10,8 +10,10 @@ import { project } from "./project";
 import { newsType } from "./newsType";
 import { teamType } from "./teamType"; 
 import { alumniType } from "./alumini";
+import { contactSubmission } from './contactSubmission';
+import { publication } from "./publications";
 
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [blockContentType, categoryType, postType, authorType,commentType, projectType,eventType,project,newsType,teamType,alumniType],
+  types: [blockContentType, categoryType, postType, authorType,commentType, projectType,eventType,project,newsType,teamType,alumniType,contactSubmission,publication],
 };

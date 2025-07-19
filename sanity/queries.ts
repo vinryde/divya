@@ -7,6 +7,7 @@ import { ProjectDesc } from './types';
 import type { NewsItem } from "./types";
 import type { TeamMember } from "./types";
 import type { AlumniMember } from "./types";
+import type { Publication } from "./types";
 // Post query
 const FEATURED_POSTS_QUERY =
   defineQuery(`*[_type == "post" && isFeatured == true && defined(slug.current)]|order(publishedAt desc)[0...$quantity]{
@@ -278,6 +279,19 @@ export const getProjectDescBySlug = async (slug: string): Promise<ProjectDesc | 
     { slug }
   );
 };
+// queries.ts
+ 
+export const getPublications = async (): Promise<Publication[]> => {
+  return await client.fetch(groq`
+    *[_type == "publication"] | order(_createdAt desc) {
+      _id,
+      title,
+      shortDescription,
+      link
+    }
+  `);
+};
+
 
 export const getTeam = async (): Promise<TeamMember[]> => {
   return await client.fetch(

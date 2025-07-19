@@ -13,6 +13,7 @@ import { AemoOne } from "@/components/aboutsenan";
 import NewsSection from "@/components/News";
 import { GlowingEffectDemo } from "@/components/bentocard";
 import AboutPage from "@/components/aboutme";
+import ContactForm from "@/components/contactform";
 export default function Home() {
   return (
     <div className="overflow-x-hidden">
@@ -22,7 +23,7 @@ export default function Home() {
       <AboutPage/>
       <ServicesBadge />
       <GlowingEffectDemo/>
-      <FeaturedPosts />
+      <ContactForm/>
     </div>
   );
 }

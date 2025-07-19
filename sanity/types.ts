@@ -202,6 +202,14 @@ export type AlumniMember = {
   imageAlt?: string;
 };
 
+export type Publication = {
+  _id: string;
+  title: string;
+  shortDescription: string;
+  link: string;
+};
+
+
 
 
 

@@ -12,7 +12,7 @@ export function HeroSectionDemo() {
         text: "Follow our latest updates ",
         action: {
           text: "Learn more",
-          href: "/",
+          href: "/#formone",
         },
       }}
       title="SENAN EDUCATION LAB"
