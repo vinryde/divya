@@ -63,7 +63,7 @@ export function FeaturesSectionWithHoverEffects() {
   ];
   
   return (
-    <div>
+    <div className="space-y-9">
        <div className="mb-6 text-center max-w-3xl mx-auto">
         <h2 className="text-3xl font-bold mb-4">Rooted in Purpose. Powered by People</h2>
         <p className="text-base text-muted-foreground">
