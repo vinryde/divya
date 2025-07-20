@@ -39,7 +39,7 @@ export default function ContactForm() {
     <h2 className="text-2xl font-bold mb-4 text-center">Contact Us</h2>
     <p className="max-w-2xl text-center">Reach out to Senan Education Lab for collaborations, queries, or insights. We're happy to connect with educators, researchers, and partners worldwide.</p>
     </div>
-    <form onSubmit={handleSubmit} className=" space-y-4 max-w-2xl border border-slate-400 rounded-lg p-5">
+    <form onSubmit={handleSubmit} className=" space-y-4 max-w-2xl border border-slate-400 rounded-lg p-4 sm:mx-6 lg:mx-0">
       <input
         type="text"
         name="name"

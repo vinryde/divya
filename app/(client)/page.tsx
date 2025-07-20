@@ -14,16 +14,18 @@ import { GlowingEffectDemo } from "@/components/bentocard";
 import AboutPage from "@/components/aboutme";
 import ContactForm from "@/components/contactform";
 import { FeaturesSectionWithHoverEffects } from "@/components/feature-section-with-hover-effects";
+import NewsSectionOne from "@/components/newsone";
 export default function Home() {
   return (
     <div className="overflow-x-hidden">
       <HeroSectionDemo />
       <FeaturesSectionWithHoverEffects/>
-      <NewsSection/>
+      <NewsSectionOne/>
       <AboutPage/>
       <WhatIDo />
       <GlowingEffectDemo/>
       <ContactForm/>
+     
     </div>
   );
 }

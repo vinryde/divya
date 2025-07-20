@@ -64,13 +64,13 @@ export function FeaturesSectionWithHoverEffects() {
   
   return (
     <div className="space-y-9">
-       <div className="sm:mt-10 lg:mt-0 mb-6 text-center max-w-3xl mx-auto">
+       <div className="sm:mt-10 lg:mt-0 mb-6 text-center max-w-3xl mx-auto p-5">
         <h2 className="text-3xl font-bold mb-4">Rooted in Purpose. Powered by People</h2>
         <p className="text-base text-muted-foreground">
         At Senan Education Lab, we blend research, innovation, and global collaboration to create inclusive, sustainable, and real-world educational solutions—led by future-ready scholars and driven by impact.
         </p>
       </div>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto ">
       {features.map((feature, index) => (
         <Feature key={feature.title} {...feature} index={index} />
       ))}
