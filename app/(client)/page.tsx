@@ -1,7 +1,6 @@
 import Banner from "@/components/Banner";
 import { FeaturedPosts } from "@/components/blog/featuredPosts";
 import Projects from "@/components/Projects";
-import ServicesBadge from "@/components/ServicesBadge";
 import Testimonials from "@/components/Testimonials";
 import WhatIDo from "@/components/WhatIDo";
 import EventSection from "@/components/Events";
@@ -14,14 +13,15 @@ import NewsSection from "@/components/News";
 import { GlowingEffectDemo } from "@/components/bentocard";
 import AboutPage from "@/components/aboutme";
 import ContactForm from "@/components/contactform";
+import { FeaturesSectionWithHoverEffects } from "@/components/feature-section-with-hover-effects";
 export default function Home() {
   return (
     <div className="overflow-x-hidden">
       <HeroSectionDemo />
-      <WhatIDo />
+      <FeaturesSectionWithHoverEffects/>
       <NewsSection/>
       <AboutPage/>
-      <ServicesBadge />
+      <WhatIDo />
       <GlowingEffectDemo/>
       <ContactForm/>
     </div>
