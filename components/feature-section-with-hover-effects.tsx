@@ -64,7 +64,7 @@ export function FeaturesSectionWithHoverEffects() {
   
   return (
     <div className="space-y-9">
-       <div className="mb-6 text-center max-w-3xl mx-auto">
+       <div className="sm:mt-10 lg:mt-0 mb-6 text-center max-w-3xl mx-auto">
         <h2 className="text-3xl font-bold mb-4">Rooted in Purpose. Powered by People</h2>
         <p className="text-base text-muted-foreground">
         At Senan Education Lab, we blend research, innovation, and global collaboration to create inclusive, sustainable, and real-world educational solutions—led by future-ready scholars and driven by impact.
