@@ -1,4 +1,6 @@
 import { TiltedScroll } from "@/components/ui/tilted-scroll"
+import { LiquidButton } from "./liquid-glass-button";
+import Link from "next/link";
 
 export function TiltedScrollDemo() {
   const customItems = [
@@ -31,6 +33,11 @@ export function TiltedScrollDemo() {
     <div className="max-w-2xl mx-auto">
         <h2 className="max-w-xl text-2xl font-bold lg:text-left mb-4 sm:text-center sm:px-4 lg:px-0">Pedagogy, Policy, and Practice; Aligned for Educational Impact </h2>
         <p className="text-md lg:text-left lg:max-w-xl sm:px-7 sm:text-center lg:px-0">We integrate evidence-based pedagogy, responsive policy frameworks, and hands-on practice to create meaningful, scalable change in education across diverse learning contexts.</p>
+        <Link href="/projects">
+        <LiquidButton size={"sm"} className="mt-5">
+          Explore Our Projects
+        </LiquidButton>
+        </Link>
     </div>
     </div>
   )

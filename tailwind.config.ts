@@ -7,6 +7,9 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: [
+    'animate-skew-scroll' // prevents purging in Vercel builds
+  ],
   theme: {
   	screens: {
   		sm: '320px',
