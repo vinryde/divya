@@ -40,7 +40,7 @@ function LogoCarouselBasic() {
           <p className="text-sm font-medium tracking-widest text-muted-foreground">
             TRUSTED BY INSTITUTIONS FROM AROUND THE WORLD
           </p>
-          <h2 className="text-[3.5rem] font-bold tracking-tight leading-none">
+          <h2 className="lg:text-[3.5rem] sm:text-2xl font-bold tracking-tight leading-none">
           Backed by Global Academia
           </h2>
         </div>
