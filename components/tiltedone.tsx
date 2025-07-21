@@ -34,9 +34,11 @@ export function TiltedScrollDemo() {
         <h2 className="max-w-xl text-2xl font-bold lg:text-left mb-4 sm:text-center sm:px-4 lg:px-0">Pedagogy, Policy, and Practice; Aligned for Educational Impact </h2>
         <p className="text-md lg:text-left lg:max-w-xl sm:px-7 sm:text-center lg:px-0">We integrate evidence-based pedagogy, responsive policy frameworks, and hands-on practice to create meaningful, scalable change in education across diverse learning contexts.</p>
         <Link href="/projects">
-        <LiquidButton size={"sm"} className="mt-5">
-          Explore Our Projects
-        </LiquidButton>
+        <div className="flex mb-3">
+           <LiquidButton size={"sm"} className="mt-5 sm:mx-auto lg:mx-1">
+               Explore Our Projects
+            </LiquidButton>
+        </div>
         </Link>
     </div>
     </div>
