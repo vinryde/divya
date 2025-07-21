@@ -18,7 +18,6 @@ const ServicesPage = () => {
       
       <HeroSectionAcademics/>
       <LogoCarouselBasic />
-      <Partners />
       <SectionTitle/>
       <EvervaultCardDemo />
       <EvervaultCardTwo />
