@@ -19,6 +19,7 @@
     --animate-appear: appear 0.5s ease-out forwards;
     --animate-appear-zoom: appear-zoom 0.5s ease-out forwards;
     --animate-shine: shine var(--duration) infinite linear;
+    --animate-skew-scroll: skew-scroll 20s linear infinite;
   }
   .dark {
     --brand: 31 97% 72%;
@@ -77,6 +78,14 @@
     }
   to {
     background-position: 0% 0%;
+    }
+  }
+  @keyframes skew-scroll {
+  0% {
+    transform: rotateX(20deg) rotateZ(-20deg) skewX(20deg);
+    }
+  100% {
+    transform: rotateX(20deg) rotateZ(-20deg) skewX(20deg) translateY(-100%);
     }
   }
 }

@@ -53,11 +53,20 @@ export default {
   					opacity: '1',
   					transform: 'scale(1)'
   				}
+  			},
+  			'skew-scroll': {
+  				'0%': {
+  					transform: 'rotateX(20deg) rotateZ(-20deg) skewX(20deg)'
+  				},
+  				'100%': {
+  					transform: 'rotateX(20deg) rotateZ(-20deg) skewX(20deg) translateY(-500%)'
+  				}
   			}
   		},
   		animation: {
   			appear: 'appear 0.5s ease-out forwards',
-  			'appear-zoom': 'appear-zoom 0.5s ease-out forwards'
+  			'appear-zoom': 'appear-zoom 0.5s ease-out forwards',
+  			'skew-scroll': 'skew-scroll 20s linear infinite'
   		}
   	}
   },
