@@ -1,11 +1,11 @@
 import { HeroSectionOutreach } from "@/components/herooutreach"
-import EventSection from "@/components/Events";
+import FlippingCardDemo from "@/components/newoutreach";
 
 const OutreachPage = () => {
   return (
     <div>
       <HeroSectionOutreach />
-      <EventSection />
+      <FlippingCardDemo />
     </div>
   )
 }

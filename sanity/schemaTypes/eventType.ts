@@ -28,6 +28,7 @@ export const eventType = defineType({
     defineField({ name: "dateto", title: "Date To", type: "date" }),
     defineField({ name: "collaboration", title: "Collaboration", type: "string" }),
     defineField({ name: "venue", title: "Venue", type: "string" }),
+    defineField({ name: "shortdescription", title: "Short Description", type: "string" }),
     defineField({
       name: "image",
       title: "Event Image / Brochure",

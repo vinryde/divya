@@ -34,7 +34,7 @@ const demoLogos = [
 
 function LogoCarouselBasic() {
   return (
-    <Card variant={"gradient"} className="max-w-6xl">
+    <Card variant={"gradient"} className="max-w-6xl mb-20">
       <CardContent className="pt-6">
         <div className="text-center space-y-4 mb-12">
           <p className="text-sm font-medium tracking-widest text-muted-foreground">

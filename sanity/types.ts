@@ -108,11 +108,14 @@ export type OutreachEvent = {
   dateto: string;
   collaboration: string;
   venue: string;
+  shortdescription: string;
   image?: {
     asset: { _ref: string; _type: string };
   };
   imageUrl?: string;
-  description?: any; // Portable Text
+  description?: any;
+
+   // Portable Text
 };
 
 export type Project = {
