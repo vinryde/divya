@@ -27,7 +27,7 @@ interface HeroProps {
   title: string;
   description: string;
   actions: HeroAction[];
-  image: {
+  image?: {
     light: string;
     dark: string;
     alt: string;
@@ -42,7 +42,12 @@ export function HeroSection({
   image,
 }: HeroProps) {
   const { resolvedTheme } = useTheme();
-  const imageSrc = resolvedTheme === "light" ? image.light : image.dark;
+  const imageSrc = image
+  ? resolvedTheme === "light"
+    ? image.light
+    : image.dark
+  : undefined;
+
 
   return (
     <section
@@ -90,26 +95,30 @@ export function HeroSection({
           </div>
 
           {/* Image with Glow */}
-          <div className="relative pt-12">
-            <MockupFrame
-              className="animate-appear  delay-700"
-              size="small"
-            >
-              <Mockup type="responsive">
-                <Image
-                  src={imageSrc}
-                  alt={image.alt}
-                  width={1248}
-                  height={765}
-                  priority
-                />
-              </Mockup>
-            </MockupFrame>
-            <Glow
-              variant="top"
-              className="animate-appear-zoom"
-            />
-          </div>
+         {/* Image with Glow */}
+{image ? (
+  <div className="relative pt-12">
+    <MockupFrame className="animate-appear delay-700" size="small">
+      <Mockup type="responsive">
+        <Image
+          src={imageSrc || ""}
+          alt={image.alt || ""}
+          width={1248}
+          height={765}
+          priority
+        />
+      </Mockup>
+    </MockupFrame>
+    <Glow variant="top" className="animate-appear-zoom" />
+  </div>
+) : (
+  <div className="relative pt-12  min-w-[600px]">
+    {/* Empty placeholder to maintain height */}
+    <div className="w-full h-full" />
+    <Glow variant="top" className="animate-appear-zoom" />
+  </div>
+)}
+
         </div>
       </div>
     </section>
