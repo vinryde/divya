@@ -3,7 +3,7 @@
 import { HeroSection } from "@/components/hero-section"
 import { Icons } from "@/components/ui/icons"
 
-export function HeroSectionOutreach() {
+export function HeroSectionGallery() {
   return (
   
     <HeroSection
@@ -14,8 +14,8 @@ export function HeroSectionOutreach() {
           href: "/#formone",
         },
       }}
-      title="OUTREACH"
-      description="Our outreach bridges academia and society. Through workshops, awareness programs, and community initiatives, we bring research to real-world settings—empowering learners, educators, and communities across diverse social landscapes."
+      title="GALLERY"
+      description="From fieldwork snapshots to vibrant classroom innovations and global collaborations, our gallery captures the people, projects, and passion behind every educational impact."
       actions={[
         {
           text: "Contact",

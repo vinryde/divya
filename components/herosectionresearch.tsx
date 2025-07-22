@@ -11,7 +11,7 @@ export function HeroSectionResearch() {
         text: "Follow our latest updates ",
         action: {
           text: "Learn more",
-          href: "/",
+          href: "/#formone",
         },
       }}
       title="Research"
@@ -29,11 +29,7 @@ export function HeroSectionResearch() {
           
         },
       ]}
-      image={{
-        light: "https://www.keralauniversity.ac.in/images/2000x700_senate_house.jpg",
-        dark: "https://upload.wikimedia.org/wikipedia/commons/5/5f/University_of_Kerala.jpg",
-        alt: "University of Kerala",
-      }}
+     
     />
   
   )

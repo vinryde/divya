@@ -10,7 +10,7 @@ export function HeroSectionPubs() {
         text: "Follow our latest updates ",
         action: {
           text: "Learn more",
-          href: "/",
+          href: "/#formone",
         },
       }}
       title="PUBLICATIONS"
