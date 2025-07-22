@@ -58,7 +58,7 @@ export function HeroSection({
       )}
     >
       <div className="mx-auto flex max-w-container flex-col gap-12 pt-16 sm:gap-24">
-        <div className="flex flex-col items-center gap-6 text-center sm:gap-12">
+        <div className="flex flex-col items-center gap-6 text-center sm:gap-6">
           {/* Badge */}
           {badge && (
             <Badge variant="outline" className="animate-appear gap-2">
@@ -76,7 +76,7 @@ export function HeroSection({
           </h1>
 
           {/* Description */}
-          <p className="text-md relative z-10 max-w-[550px] animate-appear font-medium text-neutral-500   sm:text-xl">
+          <p className="lg:text-lg relative z-10 max-w-[550px] animate-appear font-medium text-neutral-500  sm:text-sm">
             {description}
           </p>
 
