@@ -11,6 +11,7 @@ import { EvervaultCardThree } from "@/components/cardthree";
 import { SectionTitle } from "@/components/sectionheder";
 import { Partners } from "@/components/partners";
 import { LogoCarouselBasic } from "@/components/partnernew";
+import { TimelineDemo } from "@/components/timelinenew";
 
 const ServicesPage = () => {
   return (
@@ -18,6 +19,7 @@ const ServicesPage = () => {
       
       <HeroSectionAcademics/>
       <LogoCarouselBasic />
+      <TimelineDemo />
       <SectionTitle/>
       <EvervaultCardDemo />
       <EvervaultCardTwo />

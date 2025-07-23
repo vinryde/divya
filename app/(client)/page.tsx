@@ -16,6 +16,7 @@ import ContactForm from "@/components/contactform";
 import { FeaturesSectionWithHoverEffects } from "@/components/feature-section-with-hover-effects";
 import NewsSectionOne from "@/components/newsone";
 import { TiltedScrollDemo } from "@/components/tiltedone";
+import { TimelineDemo } from "@/components/timelinenew";
 export default function Home() {
   return (
     <div className="overflow-x-hidden">
@@ -27,6 +28,7 @@ export default function Home() {
       <WhatIDo />
       <GlowingEffectDemo/>
       <ContactForm/>
+      
       
      
     </div>

@@ -290,7 +290,7 @@ export const CircularTestimonials = ({
         .testimonial-container {
           width: 100%;
           max-width: 56rem;
-          padding: 2rem;
+          padding: 1rem;
         }
         .testimonial-grid {
           display: grid;
