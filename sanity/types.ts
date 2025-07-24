@@ -182,6 +182,30 @@ export type TeamMember = {
   imageUrl?: string;
   description?: string;
 };
+export type ShuffleImage = {
+  _id: string;
+  _createdAt: string;
+  image: {
+    asset: {
+      _ref: string;
+      _type: 'reference';
+    };
+    alt?: string;
+  };
+};
+
+export type DragImage = {
+  _id: string;
+  _createdAt: string;
+  image: {
+    asset: {
+      _ref: string;
+      _type: 'reference';
+    };
+    alt?: string;
+  };
+};
+
 
 // sanity/types.ts
 

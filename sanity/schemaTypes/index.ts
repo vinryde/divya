@@ -11,8 +11,11 @@ import { teamType } from "./teamType";
 import { alumniType } from "./alumini";
 import { contactSubmission } from './contactSubmission';
 import { publication } from "./publications";
+import { shuffleImageType } from "./shuffleImage";
+import { dragImage } from "./dragimage";
+
 
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [blockContentType, categoryType, postType, authorType,commentType,eventType,project,newsType,teamType,alumniType,contactSubmission,publication],
+  types: [blockContentType, categoryType, postType, authorType,commentType,eventType,project,newsType,teamType,alumniType,contactSubmission,publication,shuffleImageType,dragImage],
 };

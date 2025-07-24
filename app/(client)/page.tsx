@@ -25,6 +25,7 @@ export default function Home() {
       <NewsSectionOne/>
       <TiltedScrollDemo/>
       <AboutPage/>
+      <TimelineDemo/>
       <WhatIDo />
       <GlowingEffectDemo/>
       <ContactForm/>

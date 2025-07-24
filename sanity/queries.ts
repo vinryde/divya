@@ -8,6 +8,8 @@ import type { NewsItem } from "./types";
 import type { TeamMember } from "./types";
 import type { AlumniMember } from "./types";
 import type { Publication } from "./types";
+import type { ShuffleImage } from "./types";
+import type { DragImage } from './types';
 // Post query
 const FEATURED_POSTS_QUERY =
   defineQuery(`*[_type == "post" && isFeatured == true && defined(slug.current)]|order(publishedAt desc)[0...$quantity]{
@@ -195,6 +197,7 @@ export const getOutreachEvents = async (): Promise<OutreachEvent[]> => {
     }`
   );
 };
+
 
 export const getOutreachEventBySlug = async (slug: string): Promise<OutreachEvent | null> => {
   return await client.fetch(
@@ -414,6 +417,37 @@ export const getAllAlumni = async (): Promise<AlumniMember[]> => {
       description,
       "imageUrl": image.asset->url,
       "imageAlt": image.alt
+    }`
+  );
+};
+
+export const getShuffleImages = async (): Promise<ShuffleImage[]> => {
+  return await client.fetch(
+    groq`*[_type == "shuffleImage"] | order(_createdAt desc) {
+      _id,
+      _createdAt,
+      image {
+        asset {
+          _ref,
+          _type
+        },
+        alt
+      }
+    }`
+  );
+};
+export const getDragImages = async (): Promise<DragImage[]> => {
+  return await client.fetch(
+    groq`*[_type == "DragImage"] | order(_createdAt desc) {
+      _id,
+      _createdAt,
+      image {
+        asset {
+          _ref,
+          _type
+        },
+        alt
+      }
     }`
   );
 };

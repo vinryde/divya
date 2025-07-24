@@ -64,7 +64,9 @@ export const CircularTestimonials = ({
   const colorArrowHoverBg = colors.arrowHoverBackground ?? "#00a6fb";
   const fontSizeName = fontSizes.name ?? "1.5rem";
   const fontSizeDesignation = fontSizes.designation ?? "0.925rem";
-  const fontSizeQuote = fontSizes.quote ?? "1.125rem";
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 640;
+  const fontSizeQuote = fontSizes.quote ?? (isMobile ? "0.9rem" : "1.125rem");
+  
 
   // State
   const [activeIndex, setActiveIndex] = useState(0);
