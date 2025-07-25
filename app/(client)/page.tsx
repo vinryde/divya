@@ -21,12 +21,12 @@ export default function Home() {
   return (
     <div className="overflow-x-hidden">
       <HeroSectionDemo />
-      <FeaturesSectionWithHoverEffects/>
+      <WhatIDo />
       <NewsSectionOne/>
       <TiltedScrollDemo/>
       <AboutPage/>
       <TimelineDemo/>
-      <WhatIDo />
+      <FeaturesSectionWithHoverEffects/>
       <GlowingEffectDemo/>
       <ContactForm/>
       
