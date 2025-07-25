@@ -11,7 +11,7 @@ export function HeroSectionTeam() {
         text: "Follow our latest updates ",
         action: {
           text: "Learn more",
-          href: "/",
+          href: "/#formone",
         },
       }}
       title="TEAM"
