@@ -6,7 +6,7 @@ import { TeamInternationalDoctoralScholars } from "@/components/TeamInternationa
 import { TeamDoctoralScholars } from "@/components/TeamDoctoral";
 import { TeamAspireScholars } from "@/components/TeamAspireScholars";
 import { AlumniTestimonials } from "@/components/stagger-testimonials";
-import AboutPage from "@/components/aboutme";
+import AboutSection from "@/components/aboutsectionew";
 
 
 const WordsOne=[{text:"Project"},
@@ -39,7 +39,7 @@ const TeamPage = () => {
     return (
       <div className="overflow-x-hidden">
         <HeroSectionTeam />
-        <AboutPage />
+        <AboutSection />
         <SectionIntro words={WordsOne} description={DescriptionOne} />
         <TeamDetails />
         <SectionIntro words={WordsTwo} description={DescriptionTwo} />
