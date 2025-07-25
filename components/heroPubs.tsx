@@ -28,11 +28,7 @@ export function HeroSectionPubs() {
           
         },
       ]}
-      image={{
-        light: "https://www.keralauniversity.ac.in/images/2000x700_senate_house.jpg",
-        dark: "https://upload.wikimedia.org/wikipedia/commons/5/5f/University_of_Kerala.jpg",
-        alt: "University of Kerala",
-      }}
+     
     />
   
   )
