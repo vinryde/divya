@@ -23,11 +23,11 @@ export const footerLinks = [
     data: [
       { label: "Home", href: "/" },
       { label: "Academics", href: "/academics" },
-      { label: "Research", href: "/" },
+      { label: "Research", href: "/projects" },
       { label: "Team", href: "/team" },
-      { label: "Outreach", href: "/" },
-      { label: "Publications", href: "/" },
-      { label: "Gallery", href: "/" },
+      { label: "Outreach", href: "/outreach" },
+      { label: "Publications", href: "/publications" },
+      { label: "Gallery", href: "/gallery" },
       
     ],
   },
@@ -49,7 +49,7 @@ export const footerLinks = [
     data: [
       { label: "Blog", href: "/" },
       { label: "Newsletter", href: "/" },
-      { label: "Events", href: "/" },
+      { label: "Events", href: "/outreach" },
     ],
   },
 ];

@@ -1,13 +1,13 @@
 import { HeroSectionGallery } from "@/components/herogallery";
 import { ShuffleHeroDemo } from "@/components/shufflegrid";
-import {DragOne} from "@/components/dragone"
+import { GalleryOne } from "@/components/gallerycircle";
 
 export default function GalleryPage(){
     return(
         <div>
             <HeroSectionGallery />
             <ShuffleHeroDemo />
-            <DragOne />
+            <GalleryOne />
         </div>
     )
 }
