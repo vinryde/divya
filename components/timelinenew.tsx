@@ -86,9 +86,20 @@ export function TimelineDemo() {
       title: "2018",
       content: (
         <div>
+          <h2 className="text-sm md:text-base font-semibold mb-1">Precourt Fellowships</h2>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm">
+             Precourt Fellowship at Stanford University, USA.
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "2018",
+      content: (
+        <div>
           <h2 className="text-sm md:text-base font-semibold mb-1">Outreach & Precourt Fellowships</h2>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm">
-            Lecturing Fund Award (IIE, NY) and Precourt Fellowship at Stanford University, USA.
+            Lecturing Fund Award (IIE, NY) 
           </p>
         </div>
       ),
@@ -97,9 +108,20 @@ export function TimelineDemo() {
       title: "2019",
       content: (
         <div>
-          <h2 className="text-sm md:text-base font-semibold mb-1">Outreach & BECC Fellowship</h2>
+          <h2 className="text-sm md:text-base font-semibold mb-1">BECC Fellowship</h2>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm">
-            Travel Award (IIE, NY) and BECC Fellowship from Morris S. Smith Foundation, USA.
+            BECC Fellowship from Morris S. Smith Foundation, USA.
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "2019",
+      content: (
+        <div>
+          <h2 className="text-sm md:text-base font-semibold mb-1">Travel Award</h2>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm">
+            Travel Award (IIE, NY) 
           </p>
         </div>
       ),
@@ -108,9 +130,20 @@ export function TimelineDemo() {
       title: "2020",
       content: (
         <div>
-          <h2 className="text-sm md:text-base font-semibold mb-1">Scholarship & Award</h2>
+          <h2 className="text-sm md:text-base font-semibold mb-1">Best Teacher Educator National Award</h2>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm">
-            MS2 Level Scholarship (NIIT University) and Best Teacher Educator National Award (NCTE, MHRD, India).
+           Best Teacher Educator National Award (NCTE, MHRD, India) 
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "2020",
+      content: (
+        <div>
+          <h2 className="text-sm md:text-base font-semibold mb-1">MS2 Level Scholarship</h2>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm">
+           MS2 Level Scholarship (NIIT University)
           </p>
         </div>
       ),
