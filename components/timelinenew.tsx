@@ -14,6 +14,7 @@ export function TimelineDemo() {
             1st Rank, Masters in Physics, Mahatma Gandhi University, Kerala, India.
           </p>
         </div>
+        
       ),
     },
     {

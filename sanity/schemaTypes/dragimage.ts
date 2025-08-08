@@ -3,7 +3,7 @@ import { ImageIcon } from '@sanity/icons';
 
 export const dragImage = defineType({
   name: 'DragImage',
-  title: 'Drag Image galleryh',
+  title: 'Drag Image Gallery',
   type: 'document',
   icon: ImageIcon,
   fields: [

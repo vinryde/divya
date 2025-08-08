@@ -260,7 +260,7 @@ function AboutSection({
 
                 {/* CTA Button */}
                 <motion.a href="mailto:divyacsenan@keralauniversity.ac.in"
-                  className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-br from-orange-300 to-yellow-500 text-white rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300 w-auto"
+                  className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-br from-orange-300 to-yellow-500 text-white rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300 w-auto "
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   initial={{ opacity: 0 }}

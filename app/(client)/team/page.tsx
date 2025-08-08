@@ -38,6 +38,7 @@ const DescriptionSix="Our Alumni have made significant contributions to the fiel
 const TeamPage = () => {
     return (
       <div className="overflow-x-hidden">
+
         <HeroSectionTeam />
         <AboutSection />
         <SectionIntro words={WordsOne} description={DescriptionOne} />
@@ -52,9 +53,6 @@ const TeamPage = () => {
         <TeamAspireScholars />
         <SectionIntro words={WordsSix} description={DescriptionSix} />
         <AlumniTestimonials />
-
-
-        
       </div>
     );
   };

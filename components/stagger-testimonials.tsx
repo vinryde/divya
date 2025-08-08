@@ -35,14 +35,15 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
     <div
       onClick={() => handleMove(position)}
       className={cn(
-        "absolute left-1/2 top-1/2 cursor-pointer border-2 p-8 transition-all duration-500 ease-in-out",
+        "absolute left-1/2 top-1/2 cursor-pointer border-2 p-6 transition-all duration-500 ease-in-out flex flex-col",
         isCenter
           ? "z-10 bg-neutral-900 text-neutral-50 border-neutral-900 dark:bg-neutral-50 dark:text-neutral-900 dark:border-neutral-50"
           : "z-0 bg-white text-neutral-950 border-neutral-200 hover:border-neutral-900/50 dark:bg-neutral-950 dark:text-neutral-50 dark:border-neutral-800 dark:hover:border-neutral-50/50"
       )}
       style={{
         width: cardSize,
-        height: cardSize,
+        minHeight: 360, // prevents very short cards
+        maxWidth: "90vw", // mobile safe
         clipPath:
           "polygon(50px 0%, calc(100% - 50px) 0%, 100% 50px, 100% 100%, calc(100% - 50px) 100%, 50px 100%, 0 100%, 0 0)",
         transform: `
@@ -54,6 +55,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         boxShadow: isCenter ? "0px 8px 4px hsl(var(--border))" : "0px transparent",
       }}
     >
+      {/* Side tab decoration */}
       <span
         className="absolute block origin-top-right rotate-45 bg-neutral-200 dark:bg-neutral-800"
         style={{
@@ -63,11 +65,12 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           height: 2,
         }}
       />
+
+      {/* Image */}
       <img
         src={testimonial.imgSrc}
         alt={testimonial.by}
-        className="mb-4 h-28 w-28 bg-neutral-100 object-cover object-top dark:bg-neutral-800"
-        style={{ boxShadow: "3px 0px hsl(var(--background))" }}
+        className="mb-4 h-28 w-28 mx-auto rounded-full bg-neutral-100 object-cover object-top dark:bg-neutral-800"
       />
 
       {/* Email Button */}
@@ -75,24 +78,27 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         <a
           href={`mailto:${testimonial.email}`}
           onClick={(e) => e.stopPropagation()}
-          className="mb-3 inline-flex items-center gap-2 rounded-full bg-black px-3 py-1 text-xs font-medium text-white transition hover:bg-neutral-300 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:bg-neutral-700"
+          className="mb-3 inline-flex self-center items-center gap-2 rounded-full bg-black px-3 py-1 text-xs font-medium text-white transition hover:bg-neutral-300 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:bg-neutral-700"
         >
           <MailIcon size={14} />
           Email
         </a>
       )}
 
+      {/* Description */}
       <h3
         className={cn(
-          "md:text-md sm:text-sm font-medium",
+          "text-sm md:text-md font-medium flex-grow text-center leading-relaxed",
           isCenter ? "text-neutral-50 dark:text-neutral-900" : "text-neutral-950 dark:text-neutral-50"
         )}
       >
         {testimonial.testimonial}
       </h3>
+
+      {/* Author */}
       <p
         className={cn(
-          "absolute bottom-8 left-8 right-8 mt-2 text-sm italic",
+          "mt-4 text-xs md:text-sm italic text-center",
           isCenter ? "text-neutral-50/80 dark:text-neutral-900/80" : "text-neutral-500 dark:text-neutral-400"
         )}
       >
@@ -126,8 +132,13 @@ export const AlumniTestimonials: React.FC = () => {
 
   useEffect(() => {
     const updateSize = () => {
-      const { matches } = window.matchMedia("(min-width: 640px)");
-      setCardSize(matches ? 365 : 290);
+      if (window.innerWidth < 640) {
+        setCardSize(280); // smaller for phones
+      } else if (window.innerWidth < 1024) {
+        setCardSize(320); // tablets
+      } else {
+        setCardSize(365); // desktops
+      }
     };
 
     updateSize();
@@ -175,6 +186,7 @@ export const AlumniTestimonials: React.FC = () => {
         );
       })}
 
+      {/* Navigation */}
       <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
         <button
           onClick={() => handleMove(-1)}
