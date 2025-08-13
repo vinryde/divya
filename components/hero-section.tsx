@@ -8,6 +8,7 @@ import { Glow } from "@/components/ui/glow";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
+import Link from 'next/link'
 
 interface HeroAction {
   text: string;
@@ -61,13 +62,15 @@ export function HeroSection({
         <div className="flex flex-col items-center gap-6 text-center sm:gap-6">
           {/* Badge */}
           {badge && (
-            <Badge variant="outline" className="animate-appear gap-2">
+            <a href={badge.action.href} className="inline-block z-20">
+            <Badge variant="outline" className="animate-appear gap-2 cursor-pointer hover:bg-gray-50">
               <span className="text-neutral-500 dark:text-neutral-400">{badge.text}</span>
-              <a href={badge.action.href} className="flex items-center gap-1">
+              <span className="flex items-center gap-1">
                 {badge.action.text}
                 <ArrowRightIcon className="h-3 w-3" />
-              </a>
+              </span>
             </Badge>
+          </a>
           )}
 
           {/* Title */}

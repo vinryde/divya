@@ -14,15 +14,15 @@ import { GlowingEffectDemo } from "@/components/bentocard";
 import AboutPage from "@/components/aboutme";
 import ContactForm from "@/components/contactform";
 import { FeaturesSectionWithHoverEffects } from "@/components/feature-section-with-hover-effects";
-import NewsSectionOne from "@/components/newsone";
 import { TiltedScrollDemo } from "@/components/tiltedone";
 import { TimelineDemo } from "@/components/timelinenew";
+import NewsCarousel from "@/components/newsnew"
 export default function Home() {
   return (
     <div className="overflow-x-hidden">
       <HeroSectionDemo />
       <WhatIDo />
-      <NewsSectionOne/>
+      <NewsCarousel/>
       <TiltedScrollDemo/>
       <AboutPage/>
       <TimelineDemo/>
