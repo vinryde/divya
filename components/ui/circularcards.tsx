@@ -905,7 +905,7 @@ export default function CircularGallerytwo({
   bend = 3,
   textColor = "#000000",
   borderRadius = 0.05,
-  font = "12px Arial",
+  font = "12px",
   scrollSpeed = 2,
   scrollEase = 0.05,
 }: CircularGalleryPropsone) {
@@ -915,7 +915,7 @@ export default function CircularGallerytwo({
     if (!containerRef.current) return;
     
     const isMobile = window.innerWidth <= 768;
-    const adjustedBend = isMobile ? 1 : bend;
+    const adjustedBend = isMobile ? 0 : bend;
 
     const app = new App(containerRef.current, {
       items,
