@@ -1,4 +1,4 @@
-import { hero } from "@/assets/image";
+import { herotwo } from "@/assets/image";
 import Container from "@/components/Container";
 import { LiquidButton } from "@/components/liquid-glass-button";
 import { Typewriter } from "@/components/ui/typewriter";
@@ -13,7 +13,7 @@ const AboutPage = () => {
           <div className="md:flex-shrink-0">
             <Image
               className="h-48 object-contain md:w-48"
-              src={hero}
+              src={herotwo}
               alt="Profile picture"
               width={192}
               height={192}
