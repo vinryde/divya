@@ -1,4 +1,4 @@
-import { herotwo } from "@/assets/image";
+import herotwo from "@/assets/herotwo.jpg";
 import Container from "@/components/Container";
 import { LiquidButton } from "@/components/liquid-glass-button";
 import { Typewriter } from "@/components/ui/typewriter";
